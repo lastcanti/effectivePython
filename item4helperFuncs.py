@@ -11,11 +11,23 @@
 
 
 # we could do it this way
+"""
 name = input("enter name: \n")
 age=input("enter age: ")
 print("welcome, "+ name) 
+
 age = (100 - int(age) ) + 2017
-print("you will be 100 in the year: " + str(age)  )
+print("you will be 100 in the year: " + str(age))
+"""
 
-# what if we wanted to 
+# what if we wanted to use this entire
+# chunk of code again? we would create a function
 
+
+def gameplay():
+  name = input("enter name: \n")
+  age=input("enter age: ")
+  age = (100 - int(age) ) + 2017
+  return(print("welcome, "+ name) + print("you will be 100 in the year: " + str(age)))
+  
+gameplay()
